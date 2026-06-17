@@ -2,8 +2,7 @@
 
 ## 1. User Class (full_name method)
 
-We created a `User` class that stores a first name and a last name. The `full_name()` method combines them into a full name.  
-This helps us understand how to define a class, use the `__init__()` method to initialize attributes, create methods, and modify object properties.
+We created a `User` class that stores a first name and a last name. The `full_name()` method combines them into a full name. This helps us understand how to define a class, use the `__init__()` method to initialize attributes, create methods and modify object properties.
 
 ```python
 class User:
@@ -27,8 +26,7 @@ print(user2.full_name())
 
 ## 2. Dog Class (casual_name based on age)
 
-We built a `Dog` class that assigns a casual name like "puppy", "grown up dog", or "old dog" based on the dog's age. The `greet()` method calls `casual_name()` inside it.  
-This teaches us how to use default parameters (`age=0`), call one method from another, and apply conditional logic (`if/elif/else`) inside a class.
+We built a `Dog` class that assigns a casual name like "puppy", "grown up dog" or "old dog" based on the dog's age. The `greet()` method calls `casual_name()` inside it.  This teaches how to use default parameters (`age=0`), call one method from another and apply conditional logic (`if/elif/else`) inside a class.
 
 ```python
 class Dog:
@@ -53,8 +51,7 @@ print(snoopy.greet())
 
 ## 3. User Class (century based on birth year)
 
-We created a `User` class that determines whether a user was born in the 20th or 21st century based on their birth year.  
-This helps us practice using `if/else` logic inside a method and accessing object attributes from within methods.
+We created a `User` class that determines whether a user was born in the 20th or 21st century based on their birth year. This helps us practice using `if/else` logic inside a method and accessing object attributes from within methods.
 
 ```python
 class User:
@@ -77,8 +74,7 @@ print(user2.welcome())
 
 ## 4. FrenchUser and SpanishUser (Inheritance)
 
-We created `FrenchUser` and `SpanishUser` classes that inherit from `User`. Each one overrides the `greet()` method to say hello in French and Spanish.  
-This helps us understand inheritance (parent-child classes), method overriding, and modular programming with `import`.
+We created `FrenchUser` and `SpanishUser` classes that inherit from `User`. Each one overrides the `greet()` method to say hello in French and Spanish. This helps us understand inheritance (parent-child classes), method overriding and modular programming with `import`.
 
 **user.py**
 ```python
@@ -123,8 +119,7 @@ luis.greet()
 
 ## 5. Weather Class
 
-We built a `Weather` class that stores a city name and initially sets temperature and condition to `None`. We used methods to set and display weather data.  
-This teaches us how to use `None` as a placeholder, assign values later, and modify object state through methods.
+We built a `Weather` class that stores a city name and initially sets temperature and condition to `None`. We used methods to set and display weather data.  This teaches how to use `None` as a placeholder, assign values later, and modify object state through methods.
 
 ```python
 class Weather:
@@ -143,5 +138,4 @@ class Weather:
 paris = Weather("Paris")
 paris.set_weather(27, "sunny")
 paris.display_weather()
-```
 ```
