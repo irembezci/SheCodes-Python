@@ -1,9 +1,9 @@
-
-# PYTHON OOP (Object-Oriented Programming) HOMEWORKS
-
----
+# WEEK 1 – PYTHON OOP (Object-Oriented Programming) HOMEWORKS
 
 ## 1. User Class (full_name method)
+
+We created a `User` class that stores a first name and a last name. The `full_name()` method combines them into a full name.  
+This helps us understand how to define a class, use the `__init__()` method to initialize attributes, create methods, and modify object properties.
 
 ```python
 class User:
@@ -25,9 +25,10 @@ print(user1.full_name())
 print(user2.full_name())
 ```
 
----
-
 ## 2. Dog Class (casual_name based on age)
+
+We built a `Dog` class that assigns a casual name like "puppy", "grown up dog", or "old dog" based on the dog's age. The `greet()` method calls `casual_name()` inside it.  
+This teaches us how to use default parameters (`age=0`), call one method from another, and apply conditional logic (`if/elif/else`) inside a class.
 
 ```python
 class Dog:
@@ -50,9 +51,10 @@ snoopy = Dog("Snoopy")
 print(snoopy.greet())
 ```
 
----
-
 ## 3. User Class (century based on birth year)
+
+We created a `User` class that determines whether a user was born in the 20th or 21st century based on their birth year.  
+This helps us practice using `if/else` logic inside a method and accessing object attributes from within methods.
 
 ```python
 class User:
@@ -73,9 +75,10 @@ print(user1.welcome())
 print(user2.welcome())
 ```
 
----
-
 ## 4. FrenchUser and SpanishUser (Inheritance)
+
+We created `FrenchUser` and `SpanishUser` classes that inherit from `User`. Each one overrides the `greet()` method to say hello in French and Spanish.  
+This helps us understand inheritance (parent-child classes), method overriding, and modular programming with `import`.
 
 **user.py**
 ```python
@@ -117,9 +120,12 @@ pierre.greet()
 luis.greet()
 ```
 
----
+-
 
 ## 5. Weather Class
+
+We built a `Weather` class that stores a city name and initially sets temperature and condition to `None`. We used methods to set and display weather data.  
+This teaches us how to use `None` as a placeholder, assign values later, and modify object state through methods.
 
 ```python
 class Weather:
@@ -138,135 +144,5 @@ class Weather:
 paris = Weather("Paris")
 paris.set_weather(27, "sunny")
 paris.display_weather()
-```
-
----
-
-# FILE HANDLING HOMEWORKS
-
----
-
-## 6. Reading and Printing TODO.txt
-
-```python
-%%writefile TODO.txt
-Have breakfast
-Study Python
-Walk the dog
-Do laundry
-Reply to emails
-```
-
-```python
-with open('TODO.txt', 'r') as file:
-    tasks = file.readlines()
-
-print("My todo list:")
-for task in tasks:
-    print(f"- {task.strip()}")
-```
-
----
-
-## 7. Reading cities.txt
-
-```python
-with open('cities.txt', 'r') as file:
-    cities = file.readlines()
-
-for city in cities:
-    print(f"I want to visit {city.strip()}")
-```
-
----
-
-## 8. Reading CSV (temperatures.csv)
-
-```python
-import csv
-
-with open('temperatures.csv', 'r') as file:
-    csvFile = csv.reader(file)
-    next(csvFile)
-    for row in csvFile:
-        print(f"It is {row[2]} and {row[1]}°C in {row[0]}")
-```
-
----
-
-## 9. Appending to CSV
-
-```python
-import csv
-
-with open('temperatures.csv', 'a', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(['Berlin', '10', 'foggy'])
-    writer.writerow(['Rome', '32', 'sunny'])
-```
-
----
-
-## 10. Reading Customer CSV
-
-```python
-import csv
-
-try:
-    with open('customers.csv', 'r') as file:
-        csvFile = csv.reader(file)
-        next(csvFile)
-        for row in csvFile:
-            print(f"Customer #{row[0]}, {row[1]} {row[2]}, {row[3]}")
-except FileNotFoundError:
-    print("Error: customers.csv file not found!")
-except Exception as e:
-    print(f"Error: {e}")
-```
-
----
-
-# EXCEPTION HANDLING HOMEWORKS
-
----
-
-## 11. try/except Examples
-
-```python
-try:
-    file = open('cities.txt', 'r')
-    content = file.read()
-except FileNotFoundError:
-    print("cannot find the file")
-
-try:
-    12 / 0
-except ZeroDivisionError:
-    print('cannot divide number by 0')
-
-try:
-    a + b
-except Exception:
-    print('something went wrong')
-
-print("hello world")
-```
-
----
-
-## 12. CSV with Exception Handling
-
-```python
-import csv
-
-try:
-    with open('cities.csv', 'r') as file:
-        csvFile = csv.reader(file)
-        for row in csvFile:
-            print(f"It is {row[1]} in {row[0]}.")
-except FileNotFoundError:
-    print("Error: cities.csv cannot found")
-except Exception as e:
-    print(f"Error: {e}")
 ```
 ```
