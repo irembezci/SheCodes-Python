@@ -1,4 +1,4 @@
-# WEEK 1 – PYTHON OOP (Object-Oriented Programming) HOMEWORKS
+# WEEK 1 – PYTHON OOP (Object-Oriented Programming)
 
 ## User Class (full_name method)
 
