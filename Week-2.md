@@ -191,7 +191,7 @@ print(result['answer'])
 
 ## Travel Itinerary Planner – Full Project
 
-We built a complete travel itinerary planner that takes user inputs, displays current weather for both cities using the SheCodes Weather API, generates a travel plan using the SheCodes AI API and shows a welcome message with a credit section. This project combines everything we learned: user input validation, API integration, JSON handling, rich console output, and modular function design.
+We built a complete travel itinerary planner that takes user inputs, displays current weather for both cities using the SheCodes Weather API, generates a travel plan using the SheCodes AI API and shows a welcome message with a credit section. This project combines everything we learned: user input validation, API integration, JSON handling, rich console output and modular function design.
 
 ```python
 import requests
