@@ -120,7 +120,6 @@ pierre.greet()
 luis.greet()
 ```
 
--
 
 ## 5. Weather Class
 
